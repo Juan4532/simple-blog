@@ -9,12 +9,13 @@ class Category(models.Model):
         return self.name
 
 
-class Post(models.Model):
+class PostObjects(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset() .filter(status='published')
 
-    class PostObjects(models.Manager):
-        def get_queryset(self):
-            return super().get_queryset() .filter(status='published')
-    
+class Post(models.Model):
+    postobjects = PostObjects()
+
     options = (
         ('draft', 'Draft'),
         ('published', 'Published'),    
