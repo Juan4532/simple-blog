@@ -5,12 +5,16 @@
 {% block style %}<link rel="stylesheet" href="{% static 'css/blog.css' %}"> {% endblock style %}
 
 {% block content %} 
-
-    <h1> blog </h1>
-
-    {% for post in posts %}
-        <a href="{% url 'blog:post-detail' slug=post.slug %}">
-            {{post.title}}
-            {{post.excerpt|truncatechars:50}}
-    {% endfor %}
+  <div class="blog-header">
+    <img src="{% static 'images/ancap.jpg' %}" alt="Cabecera del Blog" class="blog-header-image">
+  </div>
+  <h1> blog </h1>
+  {% for post in posts %}
+    <div class="post-item"> 
+      <h2><a href="{% url 'blog:post-detail' slug=post.slug %}">{{ post.title }}</a></h2>
+      <p class="post-meta">Publicado el {{ post.published }}</p> 
+      <div class="post-excerpt">{{ post.excerpt|truncatechars:150 }}</div> 
+      <a href="{% url 'blog:post-detail' slug=post.slug %}" class="read-more">Leer más</a> 
+    </div>
+  {% endfor %}
 {% endblock content%}

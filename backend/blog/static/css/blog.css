@@ -59,7 +59,7 @@ footer {
 /* Barra de navegacion */
 .main_nav {
   background-color: #f0f0f0;  /* Color de fondo claro */
-  padding: 15px;
+  padding: 5px;
   border-radius: 8px;         /* Bordes redondeados */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
@@ -89,4 +89,31 @@ footer {
   color: white;
 }
 
+
+.post-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    font-style: italic;
+    color: #666;
+}
+
+.read-more {
+    color: #206090; /* Color azul a juego con otros ejemplos */
+}
+
+.blog-header {
+  background-color: #f0f0f0;  /* Color de fondo claro */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.blog-header-image {
+  width: 100%;     /* Ocupa todo el ancho */
+  max-height: 200px;  /* Altura máxima */
+  margin: 0 auto;   /* Centra la imagen */
+}
 
