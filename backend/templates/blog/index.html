@@ -1,3 +1,16 @@
-{% for post in posts %}
-{{ post.title }}
-{% endfor %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Blog {% endblock title %}
+{% block style %}<link rel="stylesheet" href="{% static 'css/blog.css' %}"> {% endblock style %}
+
+{% block content %} 
+
+    <h1> blog </h1>
+
+    {% for post in posts %}
+        <a href="{% url 'blog:post-detail' slug=post.slug %}">
+            {{post.title}}
+            {{post.excerpt|truncatechars:50}}
+    {% endfor %}
+{% endblock content%}

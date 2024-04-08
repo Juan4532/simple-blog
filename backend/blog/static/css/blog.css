@@ -1,0 +1,92 @@
+/* Estilo General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    /*background: white url("https://wallpaperaccess.com/full/290941.jpg");
+    background-size: cover;
+    background-size: contain;*/
+}
+/* Cabecera */
+header {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+header a { 
+    color: #333;
+    text-decoration: none;
+}
+
+/* Blog Post */
+.blog-post {
+    max-width: 800px;
+    margin: 40px auto; /* Centrar */
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+.blog-post h1 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.post-excerpt {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.post-content p {
+    line-height: 1.6;
+}
+
+/* Pie */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+
+/* Barra de navegacion */
+.main_nav {
+  background-color: #f0f0f0;  /* Color de fondo claro */
+  padding: 15px;
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.navlist {
+  list-style: none;           /* Eliminar viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;              /* Disposición flexible */
+  justify-content: space-around; /* Distribución de elementos */
+}
+
+.navlist li a {
+  display: block;             /* Los enlaces ocupan el ancho disponible */
+  color: #333;                /* Texto gris oscuro */
+  text-decoration: none;      /* Sin subrayado */
+  padding: 12px 15px;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.navlist li a:hover {
+  background-color: #ddd;     /* Fondo gris claro al pasar el mouse */
+}
+
+.navlist .active a { /* Cambiamos el selector para apuntar al elemento activo */
+  background-color: #206090;  /* Azul destacado para el elemento activo */
+  color: white;
+}
+
+

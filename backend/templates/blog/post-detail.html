@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} {{ post.title }} {% endblock title %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'css/blog.css' %}"> {% endblock style%}
+
+{% block content %}
+  <article class="blog-post">
+    <h1>{{ post.title }}</h1>
+    <p class="post-meta">Published on {{ post.published }} by {{ post.author }}</p>
+
+    {% if post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt }}</p>
+    {% endif %}
+
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+  </article>
+{% endblock content %} 
+
