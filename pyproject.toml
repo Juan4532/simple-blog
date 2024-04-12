@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "simple-blog"
+name = "simpe-blog"
 version = "0.1.0"
 description = ""
 authors = ["Juan Rey <juan.rey@tuta.com>"]
