@@ -3,9 +3,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
-    /*background: white url("https://wallpaperaccess.com/full/290941.jpg");
-    background-size: cover;
-    background-size: contain;*/
 }
 /* Cabecera */
 header {
@@ -21,11 +18,28 @@ header a {
 }
 
 /* Blog Post */
+
+.background {
+    position: absolute;
+    width: 100%;
+    background: white url("/static/images/pedro.jpg");
+    background-size: 100px;
+    z-index: -1;
+}
+
+.background2 {
+    position: absolute;
+    width: 100%;
+    background: white url("/static/images/pedro.jpg");
+    background-size: 100px;
+}
+
 .blog-post {
     max-width: 800px;
     margin: 40px auto; /* Centrar */
     border: 1px solid #eee;
     padding: 20px;
+    background-color: white;
 }
 
 .blog-post h1 {
@@ -106,14 +120,13 @@ footer {
 }
 
 .blog-header {
-  background-color: #f0f0f0;  /* Color de fondo claro */
   padding: 20px 0;
   text-align: center;
 }
 
 .blog-header-image {
   width: 100%;     /* Ocupa todo el ancho */
-  max-height: 200px;  /* Altura máxima */
+  max-height: 400px;  /* Altura máxima */
   margin: 0 auto;   /* Centra la imagen */
 }
 
